@@ -1,0 +1,8 @@
+# file produce by Python script
+content.txt
+
+# binary from compilation
+nlp
+
+# object files
+*.o
