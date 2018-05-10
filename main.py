@@ -15,7 +15,7 @@ def extract_content(url):
     content = soup.find("body").findAll("p")
     count = 0
 
-    with open("content.txt", "a") as file:
+    with open("content.txt", "w") as file:
         for paragraph in content:
             text = paragraph.get_text()
             words = re.findall(r'\b\w+', text)
