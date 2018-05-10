@@ -41,7 +41,14 @@ int main(int argc, char *argv[])
 
     FILE *source = NULL;
     source = fopen("content.txt", "r");
-    nl_processor(*source);    
+ 
+    if (source != NULL) {
+        nl_processor(*source);
+    }
+    else {
+        printf("Fail to open text file.");
+        return 1;
+    }
 
     printf("\n*** Task completed! ***");
     return 0;
